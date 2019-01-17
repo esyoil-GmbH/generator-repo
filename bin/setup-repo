@@ -7,6 +7,7 @@ mkdir $repoName
 cd $repoName
 
 git init
+npx gitignore node
 git remote add origin "git@github.com:esyoil-GmbH/$1.git"
 
 lerna init
