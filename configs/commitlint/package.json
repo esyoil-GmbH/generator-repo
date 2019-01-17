@@ -1,0 +1,45 @@
+{
+  "name": "@esyoil-gmbh/config-commitlint",
+  "version": "0.0.0",
+  "description": "Commitlint config used in esyoil modules",
+  "keywords": [
+    "commit",
+    "commitlint",
+    "config",
+    "esyoil",
+    "git",
+    "lint"
+  ],
+  "homepage": "https://github.com/esyoil-GmbH/generator-repo/tree/master/configs/commitlint#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/esyoil-GmbH/generator-repo.git"
+  },
+  "license": "MIT",
+  "author": "Malte-Maurice Dreyer <md@esyoil.com>",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/commitlint.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^7.3.1",
+    "@commitlint/config-lerna-scopes": "^7.3.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.3.2"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "^7.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

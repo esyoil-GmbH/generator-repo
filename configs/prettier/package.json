@@ -1,0 +1,37 @@
+{
+  "name": "@esyoil-gmbh/config-prettier",
+  "version": "0.0.0",
+  "description": "Prettier config used in esyoil modules",
+  "keywords": [
+    "config",
+    "esyoil",
+    "prettier"
+  ],
+  "homepage": "https://github.com/esyoil-GmbH/generator-repo/tree/master/configs/prettier#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/esyoil-GmbH/generator-repo.git"
+  },
+  "license": "MIT",
+  "author": "Malte-Maurice Dreyer <md@esyoil.com>",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/prettier.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  },
+  "peerDependencies": {
+    "prettier": "^1.15.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

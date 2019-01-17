@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "configs/*",
+    "slush/*"
+  ],
+  "version": "0.0.0"
+}

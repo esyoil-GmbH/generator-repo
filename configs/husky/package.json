@@ -1,0 +1,39 @@
+{
+  "name": "@esyoil-gmbh/config-husky",
+  "version": "0.0.0",
+  "description": "Husky config used in esyoil modules",
+  "keywords": [
+    "config",
+    "esyoil",
+    "git",
+    "hooks",
+    "husky"
+  ],
+  "homepage": "https://github.com/esyoil-GmbH/generator-repo/tree/master/configs/husky#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/esyoil-GmbH/generator-repo.git"
+  },
+  "license": "MIT",
+  "author": "Malte-Maurice Dreyer <md@esyoil.com>",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/.huskyrc.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "husky": "^1.3.1"
+  },
+  "peerDependencies": {
+    "husky": "^1.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

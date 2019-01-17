@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+
+echo "Enter the name of the repository:"
+read repoName
+
+mkdir $repoName
+cd $repoName
+
+git init
+git remote add origin "git@github.com:esyoil-GmbH/$1.git"
+
+lerna init
+
+npx install-peerdeps -d @esyoil-gmbh/commitlint
+npx install-peerdeps -d @esyoil-gmbh/eslint
+npx install-peerdeps -d @esyoil-gmbh/husky
+npx install-peerdeps -d @esyoil-gmbh/lint-staged
+npx install-peerdeps -d @esyoil-gmbh/prettier
+npx install-peerdeps -d @esyoil-gmbh/ts
+npx install-peerdeps -d @esyoil-gmbh/tslint
+
+cat <<JS >> .eslintrc.js
+"use strict";
+
+module.exports = {
+  extends: [require.resolve("@esyoil-gmbh/config-eslint")],
+};
+JS
+
+cat <<JS >> .huskyrc.js
+"use strict";
+
+module.exports = {
+  ...require("@esyoil-gmbh/config-husky"),
+};
+JS
+
+cat <<JS >> commitlint.config.js
+"use strict";
+
+module.exports = {
+  extends: ["@esyoil-gmbh/config-commitlint"],
+};
+JS
+
+cat <<JS >> lint-staged.config.js
+"use strict";
+
+module.exports = {
+  ...require("@esyoil-gmbh/config-lint-staged"),
+};
+JS
+
+cat <<JS >> prettier.config.js
+"use strict";
+
+module.exports = {
+  ...require("@esyoil-gmbh/config-prettier"),
+};
+JS
+
+cat <<JSON >> tsconfig.json
+{
+  "extends": "@esyoil-gmbh/config-ts/lib/tsconfig.json",
+}
+JSON
+
+cat <<JSON >> tslint.json
+{
+  "extends": [
+    "@esyoil-gmbh/config-tslint"
+  ]
+}
+JSON
+
+npm i
+git add -A
+
+git commit -m "chore: initial commit"
