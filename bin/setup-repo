@@ -11,13 +11,13 @@ git remote add origin "git@github.com:esyoil-GmbH/$1.git"
 
 lerna init
 
-npx install-peerdeps -d @esyoil-gmbh/commitlint
-npx install-peerdeps -d @esyoil-gmbh/eslint
-npx install-peerdeps -d @esyoil-gmbh/husky
-npx install-peerdeps -d @esyoil-gmbh/lint-staged
-npx install-peerdeps -d @esyoil-gmbh/prettier
-npx install-peerdeps -d @esyoil-gmbh/ts
-npx install-peerdeps -d @esyoil-gmbh/tslint
+npx install-peerdeps -d @esyoil-gmbh/config-commitlint
+npx install-peerdeps -d @esyoil-gmbh/config-eslint
+npx install-peerdeps -d @esyoil-gmbh/config-husky
+npx install-peerdeps -d @esyoil-gmbh/config-lint-staged
+npx install-peerdeps -d @esyoil-gmbh/config-prettier
+npx install-peerdeps -d @esyoil-gmbh/config-ts
+npx install-peerdeps -d @esyoil-gmbh/config-tslint
 
 cat <<JS >> .eslintrc.js
 "use strict";
