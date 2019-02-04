@@ -78,4 +78,4 @@ JSON
 npm i
 git add -A
 
-git commit -m "chore: initial commit"
+git commit -m "chore: initialize repo"
