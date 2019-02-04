@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+root=$(git config --get ghq.root || echo ".")
+
 echo "Enter the name of the repository:"
 read repoName
 
-mkdir $repoName
-cd $repoName
+mkdir $root/$repoName
+cd $root/$repoName
 
 git init
 npx gitignore node
