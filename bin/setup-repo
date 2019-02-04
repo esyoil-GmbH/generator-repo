@@ -13,29 +13,6 @@ git remote add origin "git@github.com:esyoil-GmbH/$1.git"
 lerna init
 
 npx install-peerdeps -d @esyoil-gmbh/config-commitlint
-npx install-peerdeps -d @esyoil-gmbh/config-eslint
-npx install-peerdeps -d @esyoil-gmbh/config-husky
-npx install-peerdeps -d @esyoil-gmbh/config-lint-staged
-npx install-peerdeps -d @esyoil-gmbh/config-prettier
-npx install-peerdeps -d @esyoil-gmbh/config-ts
-npx install-peerdeps -d @esyoil-gmbh/config-tslint
-
-cat <<JS >> .eslintrc.js
-"use strict";
-
-module.exports = {
-  extends: [require.resolve("@esyoil-gmbh/config-eslint")],
-};
-JS
-
-cat <<JS >> .huskyrc.js
-"use strict";
-
-module.exports = {
-  ...require("@esyoil-gmbh/config-husky"),
-};
-JS
-
 cat <<JS >> commitlint.config.js
 "use strict";
 
@@ -44,6 +21,25 @@ module.exports = {
 };
 JS
 
+npx install-peerdeps -d @esyoil-gmbh/config-eslint
+cat <<JS >> .eslintrc.js
+"use strict";
+
+module.exports = {
+  extends: [require.resolve("@esyoil-gmbh/config-eslint")],
+};
+JS
+
+npx install-peerdeps -d @esyoil-gmbh/config-husky
+cat <<JS >> .huskyrc.js
+"use strict";
+
+module.exports = {
+  ...require("@esyoil-gmbh/config-husky"),
+};
+JS
+
+npx install-peerdeps -d @esyoil-gmbh/config-lint-staged
 cat <<JS >> lint-staged.config.js
 "use strict";
 
@@ -52,6 +48,7 @@ module.exports = {
 };
 JS
 
+npx install-peerdeps -d @esyoil-gmbh/config-prettier
 cat <<JS >> prettier.config.js
 "use strict";
 
@@ -60,12 +57,14 @@ module.exports = {
 };
 JS
 
+npx install-peerdeps -d @esyoil-gmbh/config-ts
 cat <<JSON >> tsconfig.json
 {
   "extends": "@esyoil-gmbh/config-ts/lib/tsconfig.json",
 }
 JSON
 
+npx install-peerdeps -d @esyoil-gmbh/config-tslint
 cat <<JSON >> tslint.json
 {
   "extends": [

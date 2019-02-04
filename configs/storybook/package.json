@@ -1,0 +1,48 @@
+{
+  "name": "@esyoil-gmbh/config-storybook",
+  "version": "0.0.0",
+  "description": "Storybook config used in esyoil modules",
+  "keywords": [
+    "book",
+    "components",
+    "config",
+    "esyoil",
+    "react",
+    "story",
+    "storybook"
+  ],
+  "homepage": "https://github.com/esyoil-GmbH/generator-repo/tree/master/configs/storybook#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/esyoil-GmbH/generator-repo.git"
+  },
+  "license": "MIT",
+  "author": "Malte-Maurice Dreyer <md@esyoil.com>",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@storybook/addon-actions": "^4.1.6",
+    "@storybook/addon-info": "^4.1.6",
+    "@storybook/addon-knobs": "^4.1.6",
+    "@storybook/addon-links": "^4.1.6",
+    "@storybook/addon-storyshots": "^4.1.6"
+  },
+  "devDependencies": {
+    "@storybook/react": "^4.1.6"
+  },
+  "peerDependencies": {
+    "@storybook/react": "^4.1.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
