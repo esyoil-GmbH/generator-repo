@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 root=.
 
 echo "Enter the name of the repository:"
-read repoName
+read -r repoName
 
-mkdir $root/$repoName
-cd $root/$repoName
+mkdir "$root/$repoName"
+cd "$root/$repoName"
 
 git init
 npx gitignore node
-git remote add origin "git@github.com:esyoil-GmbH/$1.git"
+git remote add origin "git@github.com:esyoil-GmbH/$repoName.git"
 
 lerna init
 
 npx install-peerdeps -d @esyoil-gmbh/config-commitlint
-cat <<JS >> commitlint.config.js
+cat <<JS > commitlint.config.js
 "use strict";
 
 module.exports = {
@@ -24,7 +25,7 @@ module.exports = {
 JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-eslint
-cat <<JS >> .eslintrc.js
+cat <<JS > .eslintrc.js
 "use strict";
 
 module.exports = {
@@ -33,7 +34,7 @@ module.exports = {
 JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-husky
-cat <<JS >> .huskyrc.js
+cat <<JS > .huskyrc.js
 "use strict";
 
 module.exports = {
@@ -42,7 +43,7 @@ module.exports = {
 JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-lint-staged
-cat <<JS >> lint-staged.config.js
+cat <<JS > lint-staged.config.js
 "use strict";
 
 module.exports = {
@@ -51,7 +52,7 @@ module.exports = {
 JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-prettier
-cat <<JS >> prettier.config.js
+cat <<JS > prettier.config.js
 "use strict";
 
 module.exports = {
@@ -60,14 +61,14 @@ module.exports = {
 JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-ts
-cat <<JSON >> tsconfig.json
+cat <<JSON > tsconfig.json
 {
   "extends": "@esyoil-gmbh/config-ts/lib/tsconfig.json",
 }
 JSON
 
 npx install-peerdeps -d @esyoil-gmbh/config-tslint
-cat <<JSON >> tslint.json
+cat <<JSON > tslint.json
 {
   "extends": [
     "@esyoil-gmbh/config-tslint"
