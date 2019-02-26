@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-root=$(git config --get ghq.root || echo ".")
+root=.
 
 echo "Enter the name of the repository:"
 read repoName
