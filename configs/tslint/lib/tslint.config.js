@@ -8,6 +8,7 @@ module.exports = {
     require.resolve("tslint-config-prettier"),
   ],
   rules: {
+    "interface-name": [true, "never-prefix"],
     "interface-over-type-literal": false,
     prettier: true,
   },
