@@ -1,0 +1,17 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "configs/commitlint/package.json",
+        "configs/eslint/package.json",
+        "configs/husky/package.json",
+        "configs/lint-staged/package.json",
+        "configs/prettier/package.json",
+        "configs/storybook/package.json",
+        "configs/ts/package.json",
+        "configs/tslint/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
