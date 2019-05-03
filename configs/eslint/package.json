@@ -29,7 +29,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-prettier": "^3.5.0",
+    "eslint-config-prettier": "^4.2.0",
     "eslint-config-xo": "^0.26.0"
   },
   "devDependencies": {
