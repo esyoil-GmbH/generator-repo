@@ -1,6 +1,6 @@
 {
   "name": "@esyoil-gmbh/config-storybook",
-  "version": "1.0.0",
+  "version": "2.0.0-alpha.0",
   "description": "Storybook config used in esyoil modules",
   "keywords": [
     "book",
@@ -30,17 +30,17 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@storybook/addon-actions": "^4.1.6",
-    "@storybook/addon-info": "^4.1.6",
-    "@storybook/addon-knobs": "^4.1.6",
-    "@storybook/addon-links": "^4.1.6",
-    "@storybook/addon-storyshots": "^4.1.6"
+    "@storybook/addon-actions": "^6.0.28",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-knobs": "^6.0.28",
+    "@storybook/addon-links": "^6.0.28",
+    "@storybook/addon-storyshots": "^6.0.28"
   },
   "devDependencies": {
-    "@storybook/react": "^4.1.6"
+    "@storybook/react": "^6.0.28"
   },
   "peerDependencies": {
-    "@storybook/react": "^4.1.6"
+    "@storybook/react": "6.0.28"
   },
   "publishConfig": {
     "access": "public"
