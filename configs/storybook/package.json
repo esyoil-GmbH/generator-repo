@@ -30,17 +30,17 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@storybook/addon-actions": "^6.0.28",
+    "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-knobs": "^6.0.28",
-    "@storybook/addon-links": "^6.0.28",
-    "@storybook/addon-storyshots": "^6.0.28"
+    "@storybook/addon-knobs": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/addon-storyshots": "^6.2.9"
   },
   "devDependencies": {
-    "@storybook/react": "^6.0.28"
+    "@storybook/react": "^6.2.9"
   },
   "peerDependencies": {
-    "@storybook/react": "6.0.28"
+    "@storybook/react": "6.2.9"
   },
   "publishConfig": {
     "access": "public"
