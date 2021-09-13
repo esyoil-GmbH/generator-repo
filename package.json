@@ -7,16 +7,16 @@
     "url": "git@github.com/esyoil-GmbH/generator-repo.git"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "eslint": "^7.28.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-xo": "^0.36.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^6.0.0",
-    "lerna": "^4.0.0",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.1",
-    "sort-json": "^2.0.0",
-    "sort-package-json": "^1.50.0"
+    "@commitlint/cli": "12.1.4",
+    "eslint": "7.28.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-xo": "0.36.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "husky": "6.0.0",
+    "lerna": "4.0.0",
+    "lint-staged": "11.0.0",
+    "prettier": "2.3.1",
+    "sort-json": "2.0.0",
+    "sort-package-json": "1.50.0"
   }
 }
