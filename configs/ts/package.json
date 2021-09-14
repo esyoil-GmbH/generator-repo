@@ -1,6 +1,6 @@
 {
   "name": "@esyoil-gmbh/config-ts",
-  "version": "4.0.0-alpha.2",
+  "version": "4.0.0-alpha.3",
   "description": "TypeScript config used in esyoil modules",
   "keywords": [
     "config",
