@@ -3,10 +3,11 @@
 module.exports = {
   extends: [
     "eslint:recommended",
-    require.resolve("eslint-config-xo"),
-    require.resolve("eslint-config-prettier"),
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/essential",
+    "@vue/typescript",
   ],
-  plugins: ["eslint-plugin-prettier"],
+  plugins: ["eslint-plugin-prettier", "@typescript-eslint"],
   rules: {
     "prettier/prettier": ["error"],
   },
