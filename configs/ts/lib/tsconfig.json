@@ -8,6 +8,18 @@
     "module": "commonjs",
     "sourceMap": true,
     "strict": true,
-    "target": "es2017"
-  }
+    "target": "es2017",
+    "outDir": "./lib",
+    "removeComments": true,
+    "noLib": false,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
 }

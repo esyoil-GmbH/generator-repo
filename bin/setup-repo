@@ -17,6 +17,7 @@ npx lerna init
 
 npx install-peerdeps -d @esyoil-gmbh/config-commitlint
 cat <<JS > commitlint.config.js
+/* eslint-disable no-undef */
 "use strict";
 
 module.exports = {
@@ -26,6 +27,7 @@ JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-eslint
 cat <<JS > .eslintrc.js
+/* eslint-disable no-undef */
 "use strict";
 
 module.exports = {
@@ -35,6 +37,7 @@ JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-lint-staged
 cat <<JS > lint-staged.config.js
+/* eslint-disable no-undef */
 "use strict";
 
 module.exports = {
@@ -44,6 +47,7 @@ JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-prettier
 cat <<JS > prettier.config.js
+/* eslint-disable no-undef */
 "use strict";
 
 module.exports = {
