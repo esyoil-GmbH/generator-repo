@@ -1,6 +1,6 @@
 {
   "name": "@esyoil-gmbh/config-lint-staged",
-  "version": "4.0.0-alpha.1",
+  "version": "4.0.0",
   "description": "lint-staged config used in esyoil modules",
   "keywords": [
     "config",
