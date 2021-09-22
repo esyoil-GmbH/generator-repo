@@ -1,6 +1,6 @@
 {
   "name": "@esyoil-gmbh/config-lint-staged",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "lint-staged config used in esyoil modules",
   "keywords": [
     "config",
@@ -29,18 +29,18 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
-    "eslint": "^7.28.0",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.1",
-    "sort-json": "^2.0.0",
-    "sort-package-json": "^1.50.0"
+    "eslint": "^7.32.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.0",
+    "sort-json": "2.0.0",
+    "sort-package-json": "^1.51.0"
   },
   "peerDependencies": {
-    "eslint": "7.28.0",
-    "lint-staged": "11.0.0",
-    "prettier": "2.3.1",
+    "eslint": "7.32.0",
+    "lint-staged": "11.1.2",
+    "prettier": "2.4.0",
     "sort-json": "2.0.0",
-    "sort-package-json": "1.50.0"
+    "sort-package-json": "1.51.0"
   },
   "publishConfig": {
     "access": "public"

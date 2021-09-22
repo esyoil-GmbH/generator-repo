@@ -13,10 +13,11 @@ git init
 npx gitignore node
 git remote add origin "git@github.com:esyoil-GmbH/$repoName.git"
 
-lerna init
+npx lerna init
 
 npx install-peerdeps -d @esyoil-gmbh/config-commitlint
 cat <<JS > commitlint.config.js
+/* eslint-disable no-undef */
 "use strict";
 
 module.exports = {
@@ -26,6 +27,7 @@ JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-eslint
 cat <<JS > .eslintrc.js
+/* eslint-disable no-undef */
 "use strict";
 
 module.exports = {
@@ -33,17 +35,9 @@ module.exports = {
 };
 JS
 
-npx install-peerdeps -d @esyoil-gmbh/config-husky
-cat <<JS > .huskyrc.js
-"use strict";
-
-module.exports = {
-  ...require("@esyoil-gmbh/config-husky"),
-};
-JS
-
 npx install-peerdeps -d @esyoil-gmbh/config-lint-staged
 cat <<JS > lint-staged.config.js
+/* eslint-disable no-undef */
 "use strict";
 
 module.exports = {
@@ -53,6 +47,7 @@ JS
 
 npx install-peerdeps -d @esyoil-gmbh/config-prettier
 cat <<JS > prettier.config.js
+/* eslint-disable no-undef */
 "use strict";
 
 module.exports = {
@@ -67,16 +62,10 @@ cat <<JSON > tsconfig.json
 }
 JSON
 
-npx install-peerdeps -d @esyoil-gmbh/config-tslint
-cat <<JSON > tslint.json
-{
-  "extends": [
-    "@esyoil-gmbh/config-tslint"
-  ]
-}
-JSON
+npx husky-init && npm install 
+npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
+npx husky add .husky/pre-commit 'npx --no-install lint-staged'
 
-npm i
 git add -A
 
 git commit -m "chore: initialize repo"

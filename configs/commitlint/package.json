@@ -1,6 +1,6 @@
 {
   "name": "@esyoil-gmbh/config-commitlint",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Commitlint config used in esyoil modules",
   "keywords": [
     "commit",
@@ -29,15 +29,15 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^12.1.4",
-    "@commitlint/config-lerna-scopes": "^12.1.4",
-    "ramda": "^0.27.1"
+    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/config-lerna-scopes": "^13.1.0",
+    "ramda": "0.27.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4"
+    "@commitlint/cli": "^13.1.0"
   },
   "peerDependencies": {
-    "@commitlint/cli": "12.1.4"
+    "@commitlint/cli": "13.1.0"
   },
   "publishConfig": {
     "access": "public"
