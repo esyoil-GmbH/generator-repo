@@ -1,6 +1,6 @@
 {
   "name": "@esyoil-gmbh/config-tslint",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Tslint config used in esyoil modules",
   "keywords": [
     "config",
