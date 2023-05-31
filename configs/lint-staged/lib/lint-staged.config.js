@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-    "*.{,m}js": ["eslint --ignore-pattern '!*' --fix"],
+    "*.{,m}js": ["eslint --fix"],
     "*.md": ["prettier --write"],
     "*.ts{,x}": ["eslint --fix"],
     "*.vue{,x}": ["eslint --fix"],
